@@ -24,7 +24,6 @@ composer require grammarbot/grammarbot-php-client
 Download the repository code and directly require the GrammarBot.php file in your code
 
 ```
-```
 <?php
 require_once dirname(__FILE__). '/src/GrammarBot/GrammarBot.php';
 
