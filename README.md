@@ -17,7 +17,7 @@ composer install
 ### OR RUN only
 
 ```
-composer require grammarbot/grammarbot-php-client
+composer require grammarbot/grammarbot-php-client:dev-master
 ```
 ### Manual installation
 
