@@ -67,7 +67,7 @@ This example is using all defaults
 
 ```
 <?php
-require_once dirname(dirname(__FILE__)). '/vendor/autoload.php';
+require_once dirname(__FILE__). '/vendor/autoload.php';
 
 use GrammarBot\GrammarBot;
 
@@ -110,7 +110,7 @@ This example is overriding the defaults
 
 ```
 <?php
-require_once dirname(dirname(__FILE__)). '/vendor/autoload.php';
+require_once dirname(__FILE__). '/vendor/autoload.php';
 
 use GrammarBot\GrammarBot;
 
