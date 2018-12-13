@@ -77,8 +77,6 @@ $text = 'A quick brown fox jummp over the lazzy dog';
 $grammarbot = new GrammarBot();
 
 //call the api
-$result = $grammarbot->check($text);
-
 $json = $grammarbot->check($text);
 
 $matches = $json->matches;
@@ -130,8 +128,6 @@ $text = 'A quick brown fox jump over the lazzy dog';
 $grammarbot = new GrammarBot($base_uri, $endpoint, $api_key, $lang);
 
 //call the api
-$result = $grammarbot->check($text);
-
 $json = $grammarbot->check($text);
 
 $matches = $json->matches;
