@@ -35,9 +35,30 @@ $text = 'A quick brown fox jummp over the lazzy dog';
 $grammarbot = new GrammarBot();
 
 //call the api
-$result = $grammarbot->check($text);
+$json = $grammarbot->check($text);
 
-print_r($result);
+$matches = $json->matches;
+
+foreach($matches as $match){
+
+	echo $match->message. "<br>";
+
+	echo $match->offset. "<br>";
+
+	echo $match->length. "<br>";
+
+	echo $match->context->text. "<br>";
+
+	echo $match->rule->id. "<br>";
+
+	echo $match->rule->description. "<br>";
+
+	echo $match->rule->issueType. "<br>";
+
+	echo $match->rule->category->id. "<br>";
+
+	echo $match->rule->category->name. "<br>";
+}
 
 ```
 ## First Usage
@@ -58,7 +79,30 @@ $grammarbot = new GrammarBot();
 //call the api
 $result = $grammarbot->check($text);
 
-print_r($result);
+$json = $grammarbot->check($text);
+
+$matches = $json->matches;
+
+foreach($matches as $match){
+
+	echo $match->message. "<br>";
+
+	echo $match->offset. "<br>";
+
+	echo $match->length. "<br>";
+
+	echo $match->context->text. "<br>";
+
+	echo $match->rule->id. "<br>";
+
+	echo $match->rule->description. "<br>";
+
+	echo $match->rule->issueType. "<br>";
+
+	echo $match->rule->category->id. "<br>";
+
+	echo $match->rule->category->name. "<br>";
+}
 
 ```
 
@@ -88,6 +132,29 @@ $grammarbot = new GrammarBot($base_uri, $endpoint, $api_key, $lang);
 //call the api
 $result = $grammarbot->check($text);
 
-print_r($result);
+$json = $grammarbot->check($text);
+
+$matches = $json->matches;
+
+foreach($matches as $match){
+
+	echo $match->message. "<br>";
+
+	echo $match->offset. "<br>";
+
+	echo $match->length. "<br>";
+
+	echo $match->context->text. "<br>";
+
+	echo $match->rule->id. "<br>";
+
+	echo $match->rule->description. "<br>";
+
+	echo $match->rule->issueType. "<br>";
+
+	echo $match->rule->category->id. "<br>";
+
+	echo $match->rule->category->name. "<br>";
+}
 
 ```

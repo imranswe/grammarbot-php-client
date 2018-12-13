@@ -29,6 +29,27 @@ $grammarbot->setApiKey($api_key);
 $grammarbot->setLanguage($lang);
 
 //call the api
-$result = $grammarbot->check($text);
+$json = $grammarbot->check($text);
 
-print_r($result);
+$matches = $json->matches;
+
+foreach($matches as $match){
+
+	echo $match->message. "<br>";
+
+	echo $match->offset. "<br>";
+
+	echo $match->length. "<br>";
+
+	echo $match->context->text. "<br>";
+
+	echo $match->rule->id. "<br>";
+
+	echo $match->rule->description. "<br>";
+
+	echo $match->rule->issueType. "<br>";
+
+	echo $match->rule->category->id. "<br>";
+
+	echo $match->rule->category->name. "<br>";
+}
