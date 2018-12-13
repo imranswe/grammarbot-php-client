@@ -1,0 +1,25 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+# Env
+/.env
+/vhost.conf
+
+# composer
+/node_modules
+/vendor
+composer.phar
+## remove in production!
+composer.lock
+
+/frontend/controllers/GitController.php
+# IDE
+.idea
+nbproject
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# Mac DS_Store Files
+.DS_Store

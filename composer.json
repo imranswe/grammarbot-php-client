@@ -1,0 +1,21 @@
+{
+    "name": "grammarbot/grammarbot-php-client",
+    "type": "library",
+    "description": "This is a PHP client for using Grammarbot API to parse text for syntax and grammer errors",
+    "keywords": ["GrammarBot","API","PHP Client"],
+    "homepage": "https://www.grammarbot.io",
+    "authors": [
+        {
+            "name": "Imran Ullah Khan",
+            "email": "imran.swe.pk@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "GrammarBot": "src/"
+        }
+    }
+}
